@@ -453,6 +453,7 @@ section{
 }
 
 .prof .box .share a{
+    color: var(--purple);
     height: 4rem;
     width: 4rem;
     line-height: 4rem;
