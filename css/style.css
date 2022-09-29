@@ -1,13 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
 *{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
-body, html{
-    overflow-x: hidden;
-    box-sizing: border-box;
-    background-color: white;
+:root{
+    --purple: #6643ad;
+    --text-color-1: #444;
+    --text-color-2: #666;
+    --bg-color-1: #fff;
+    --bg-color-2: #eee;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--purple);
+}
+
+body{
+    background: var(--bg-color-2);
+}
+
+.container2{
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+}
+
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    padding: 2rem 7%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+}
+
+header .logo i{
+    color:var(--purple);
+}
+
+header .navbar a{
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: .8rem;
+}
+
+header .navbar a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color-2);
+}
+
+header .icons i{
+    color: var(--purple);
+    font-size: 1.5rem;
+}
+
+header .icons i:hover{
+    cursor: pointer;
+    color: #666;
+}
+
+#menu-bar{
+    color: var(--purple);
+    border: .1rem solid var(--purple);
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.footer{
+    margin-top: 300px;
+    background: var(--bg-color-1);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: var(--purple);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:.7rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--purple);
+    padding: .7rem 0 ;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--purple);
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: none;
+    padding-left: 1rem;
+    color: #666;
+}
+
+.box-container{
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+.footer .copyright{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+    border-top: .1rem solid var(--purple);
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    color: var(--purple);
+}
+
+@media(max-width: 991px){
+    header{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 768px){
+   #menu-bar{
+    display: initial;
+   }
+   
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: var(--bg-color-1);
+        border-top: .1rem solid var(--purple);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }   
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: var(--bg-color-2);
+    }
+
+    
+}
+
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--purple);
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: var(--text-color-2);
+}
+
+.home{
+    display: flex;
+    align-items : center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 7rem;
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+.home .content h3{
+    color: var(--purple);
+    font-size: 4rem;
+}
+
+.home .content p{
+    color: var(--text-color-1);
+    font-size: 1.7rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
 .main-login{
     width: 100vw;
     height: 100vh;
