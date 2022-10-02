@@ -1,5 +1,6 @@
 package com.model.entity;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,12 +14,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "aluno")
-@Data
+@Table(name = "curso")
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Builder
-public class Aluno {
+
+public class Curso {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,32 +29,5 @@ public class Aluno {
 	
 	@Column
 	private String nome;
-	
-	@Column
-	private String email;
-	
-	@Column
-	private String senha;
-	
-	@Column
-	private String idade;
-	
-	@Column
-	private String sexo;
-	
-	@Column
-	private String cpf;
-	
-	@Column
-	private String rg;
-	
-	@Column
-	private String telefone;
-	
-	@Column
-	private String endereco;
-	
-	@Column
-	private String escolaridade;
 	
 }

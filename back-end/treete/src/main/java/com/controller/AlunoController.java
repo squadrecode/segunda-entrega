@@ -20,6 +20,7 @@ import com.exception.RegraNegocio;
 import com.model.entity.Aluno;
 import com.repositories.AlunoRepository;
 import com.service.AlunoService;
+import com.service.DoacaoService;
 import com.service.impl.AlunoServiceImpl;
 
 @RestController
@@ -34,7 +35,7 @@ public class AlunoController {
 	
 	@Autowired
 	private AlunoService alunoService;
-	
+		
 	@GetMapping("/user")
 	public String hello() {
 		return "Hello world!";
