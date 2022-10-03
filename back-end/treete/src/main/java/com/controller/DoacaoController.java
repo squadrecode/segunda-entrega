@@ -50,9 +50,9 @@ public class DoacaoController {
 	@PostMapping
 	public ResponseEntity salvar(@RequestBody DoacaoDTO dto) {
 		try {
-			Doacao entidade = converter(dto);
-			entidade = service.salvarDoacao(entidade);
-			return new ResponseEntity(entidade, HttpStatus.CREATED);
+			Doacao doacao = converter(dto);
+			doacao = service.salvarDoacao(doacao);
+			return new ResponseEntity(doacao, HttpStatus.CREATED);
 		}catch(RegraNegocio e) {
 			return ResponseEntity.badRequest().body(e.getMessage());
 		}
