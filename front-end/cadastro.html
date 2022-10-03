@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container2">
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><i class="fas fa-solid fa-graduation-cap">Treete</i></a>
+
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./curso.html">Cursos</a>
+                <a href="./planos.html">Planos</a>
+                <a href="./feed-de-conteudo.html">Feed</a>
+                <a href="./doacao.html">Doações</a>
+                <a href="./contato.html">Contato</a>
+                <a href="./bio.html">Quem Somos</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search" id="search"></i>
+                <a href="./cadastro.html" class="fas fa-user"></a>
+            </div>
+        </header>
+    </div>
+
+    <div class="main-login ">
+        <div class="left-login">
+            <h1>Cadastre-se <br> E faça parte da Treete.</h1>
+            <img src="./image/login.svg" alt="animação" class="left-image" />
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Cadastrar</h1>
+                <div class="textfield">
+                    <h3>Nome:</h3>
+                    <input value="" type="text" name="nome" id="" placeholder="Nome" required>
+                </div>
+                <div class="textfield">
+                    <h3>Email:</h3>
+                    <input value="" type="email" name="email" id="" placeholder="Email" required>
+                </div>
+                <div class="textfield">
+                    <h3>Senha</h3>
+                    <input value=""type="password" name="senha" id="" placeholder="Senha"required>
+                </div>
+                <button class="btn-login" onClick={cadastrar}>Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Sobre</h3>
+                    <p>Obtenha acesso a um conjunto de ferramentas integradas que preparam você para lidar com qualquer desafio de projeto, agora e no futuro. Use os avançados fluxos de estudo com a Treete, possibilitando por um conjunto abrangente de cursos, vídeos e serviços para aprendizadoo e se manter competitivo no mercado de trabalho.
+                        </p>
+                </div>
+                <div class="box">
+                    <h3>Navegação</h3>
+                    <a href="./index.html"><i class="fas fa-chevron-right"></i>Home</a>
+                    <a href="./curso.html"><i class="fas fa-chevron-right"></i>Cursos</a>
+                    <a href="./planos.html"><i class="fas fa-chevron-right"></i>Planos</a>
+                    <a href="./doacao.html"><i class="fas fa-chevron-right"></i>Doação</a>
+                    <a href="./contato.html"><i class="fas fa-chevron-right"></i>Contato</a>
+                </div>
+  
+                <div class="box">
+                    <h3>Contate-nos</h3>
+                    <a href="#"><i class="fas fa-phone"></i>(21) 91111-2222</a>
+                    <a href="#"><i class="fas fa-phone"></i>(21) 1111-2222</a>
+                    <a href="#"><i class="fas fa-envelope"></i>treete@email.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Praça Sen. Salgado Filho, s/n - Centro, Rio de
+                        Janeiro
+                        - RJ, 20021-340</a>
+                </div>
+            </div>
+            </div>
+            <div class="copyright">&copy; 2022 Copyright - Todos os direitos reservados. Treete Tecnologia</div>
+        </section>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
