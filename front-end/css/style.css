@@ -703,3 +703,9 @@ main span h3{
 .espaçofeed {
     margin-top: 35px;
 }
+
+iframe {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
